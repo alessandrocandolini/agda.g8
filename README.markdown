@@ -23,15 +23,14 @@ See http://www.foundweekends.org/giter8/usage.html#Usage for more details
 * agda file that can be compiled with GHC backend
 * nix-shell which includes also the standard library
 * standard files (`README.md` with instructions, `.gitignore`)
+* simple github actions to the generated project (using nix instead of [setup-agda](https://github.com/wenkokke/setup-agda) intentionally, to make local and remote behaviour consistent) 
+* the template runs github actions itself, to check at least the trivial issues with the seed
 
 ### Todo
 
-* add github actions to the generated project
-* add github actions to check the seed itself
 * import agdarsec in nix-shell and github actions
 * add support for literate agda in latex conditionally
 * add support for equational reasoning
-* better readme
 * many other things
 
 ## About Giter8
