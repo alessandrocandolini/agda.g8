@@ -1,12 +1,13 @@
+{-# OPTIONS --guardedness #-}
+
 module $filename$ where
 
-open import Agda.Builtin.IO
-open import Agda.Builtin.Unit
+open import IO
 open import Agda.Builtin.String
+open import Logic
 
-postulate putStrLn : String → IO ()
-{-# FOREIGN GHC import qualified Data.Text as T #-}
-{-# COMPILE GHC putStrLn = putStrLn . T.unpack #-}
+name : Greeting -> String
+name _ = "hello, Agda"
 
-main : IO ()
-main = putStrLn "Hello world!"
+main : Main
+main = run (putStrLn (name greet))

@@ -4,8 +4,14 @@
 
 Assuming Agda is available (see Installation section),
 ```bash
-agda $filename$.agda
+agda --compile $filename$.agda
 ```
+
+The `--compile` flag creates via the GHC backend a binary file in the top-level folder that can be executed:
+```bash
+./$filename$
+```
+
 ## Installation
 
 If using [nix](https://nixos.org/), a [shell.nix](shell.nix) file is provided as part of the repo that will make Agda and it's standard library available in a ephemeral nix shell. Just `cd` into the project and type 
