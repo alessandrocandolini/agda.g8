@@ -1,36 +1,36 @@
 # Agda.g8
 
-A [Giter8][g8] seed for **minimalist** agda projects. 
+A [Giter8][g8] seed for **minimalist** agda projects.
 
 ## About the template
 
 ### Run
 
-G8 integrates seemlessly with [sbt](https://www.scala-sbt.org/). Assuming `sbt` is available in the system, one way to generate a new Agda project with name `<name>` in a folder called `<name>` from this seed is 
+G8 integrates seemlessly with [sbt](https://www.scala-sbt.org/). Assuming `sbt` is available in the system, one way to generate a new Agda project with name `<name>` in a folder called `<name>` from this seed is
 
-```bash 
+```bash
  sbt new git@github.com:alessandrocandolini/agda.g8.git --name=<name> --force
 ```
 
-(Alternatively, there is also a stand-alone `g8` command-line which is more scala agnostic.) 
+(Alternatively, there is also a stand-alone `g8` command-line which is more scala agnostic.)
 
-`name` for now is the only supported template variable at the moment and it's used for both the `*.agda` main file as well as the folder name. 
+`name` for now is the only supported template variable at the moment and it's used for both the `*.agda` main file as well as the folder name.
 
 See http://www.foundweekends.org/giter8/usage.html#Usage for more details
 
 ### Features
 
-* agda file that can be compiled with GHC backend 
+* agda file that can be compiled with GHC backend
 * nix-shell which includes also the standard library
 * standard files (`README.md` with instructions, `.gitignore`)
 
-### Todo 
+### Todo
 
 * add github actions to the generated project
 * add github actions to check the seed itself
 * import agdarsec in nix-shell and github actions
 * add support for literate agda in latex conditionally
-* add support for equational reasoning 
+* add support for equational reasoning
 * better readme
 * many other things
 
@@ -38,7 +38,7 @@ See http://www.foundweekends.org/giter8/usage.html#Usage for more details
 
 ### Install
 
-One option is via [nix](https://nixos.org/), if available on the system: 
+One option is via [nix](https://nixos.org/), if available on the system:
 ```bash
 nix-shell -p sbt
 ```
