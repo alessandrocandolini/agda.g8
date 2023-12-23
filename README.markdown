@@ -1,4 +1,20 @@
-A [Giter8][g8] template for small agda projects + nix-shell
+# Agda.g8
+
+A [Giter8][g8] seed for **minimalist** agda projects. 
+
+## Features
+
+* single agda file that can be compiled with GHC backend 
+* nix-shell which includes also the standard library
+
+## Todo 
+
+* add github actions to the generated project
+* add github actions to check the seed itself
+* import agdarsec in nix-shell and github actions
+* add support for literate agda in latex conditionally
+* better readme
+* many other things
 
 Template license
 ----------------
