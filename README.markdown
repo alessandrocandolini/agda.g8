@@ -16,6 +16,8 @@ G8 integrates seemlessly with [sbt](https://www.scala-sbt.org/). Assuming `sbt` 
 
 `name` for now is the only supported template variable at the moment and it's used for both the `*.agda` main file as well as the folder name. 
 
+See http://www.foundweekends.org/giter8/usage.html#Usage for more details
+
 ### Features
 
 * agda file that can be compiled with GHC backend 
@@ -31,8 +33,6 @@ G8 integrates seemlessly with [sbt](https://www.scala-sbt.org/). Assuming `sbt` 
 * add support for equational reasoning 
 * better readme
 * many other things
-
-See http://www.foundweekends.org/giter8/usage.html#Usage for more details
 
 ## About Giter8
 
