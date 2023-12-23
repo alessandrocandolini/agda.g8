@@ -2,7 +2,9 @@
 
 A [Giter8][g8] seed for **minimalist** agda projects. 
 
-## Run
+## About the template
+
+### Run
 
 G8 integrates seemlessly with [sbt](https://www.scala-sbt.org/). Assuming `sbt` is available in the system, one way to generate a new Agda project with name `<name>` from the seed is 
 
@@ -14,12 +16,12 @@ G8 integrates seemlessly with [sbt](https://www.scala-sbt.org/). Assuming `sbt` 
 
 `name` for now is the only supported option. 
 
-## Features
+### Features
 
 * single agda file that can be compiled with GHC backend 
 * nix-shell which includes also the standard library
 
-## Todo 
+### Todo 
 
 * add github actions to the generated project
 * add github actions to check the seed itself
