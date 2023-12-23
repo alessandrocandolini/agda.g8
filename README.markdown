@@ -2,6 +2,18 @@
 
 A [Giter8][g8] seed for **minimalist** agda projects. 
 
+## Run
+
+G8 integrates seemlessly with [sbt](https://www.scala-sbt.org/). Assuming `sbt` is available in the system, one way to generate a new Agda project with name `<name>` from the seed is 
+
+```bash 
+ sbt new git@github.com:alessandrocandolini/agda.g8.git --name=<name> --force
+```
+
+(Alternatively, there is also a stand-alone `g8` command-line.) 
+
+`name` for now is the only supported option. 
+
 ## Features
 
 * single agda file that can be compiled with GHC backend 
@@ -16,6 +28,35 @@ A [Giter8][g8] seed for **minimalist** agda projects.
 * add support for equational reasoning 
 * better readme
 * many other things
+
+See http://www.foundweekends.org/giter8/usage.html#Usage for more details
+
+## About Giter8
+
+### Install
+
+One option is via [nix](https://nixos.org/), if available on the system: 
+```bash
+nix-shell -p sbt
+```
+
+On MAC OS X, both `sbt` and `giter8` are available for example via the Homebrew package manager:
+```
+brew update
+brew install sbt
+brew install giter8
+```
+
+For more options, refer to the [original documentation](http://www.foundweekends.org/giter8/setup.html)
+
+### Crash course
+
+* Giter8 generates a project that has exactly the same structure of the [src/main/g8](src/main/g8) folder
+* template variables are defined in the [default.properties](src/main/g8/default.properties) file
+* template variables can be accessed as `$name of the variable$` (ie, between `$`) from everywhere (including path and filenames)
+* `$` is the only reserved symbol. whenever you need to use a `$` for purposes other than referring to a template variable be sure to escape it as `\$`; this is a typical source of errors
+
+A more comprehensive guide here: http://www.foundweekends.org/giter8/Contents+in+Depth.html
 
 Template license
 ----------------
