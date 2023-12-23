@@ -1,4 +1,4 @@
-module hello where
+module $filename$ where
 
 open import Agda.Builtin.IO
 open import Agda.Builtin.Unit
