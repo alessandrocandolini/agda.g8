@@ -6,20 +6,21 @@ A [Giter8][g8] seed for **minimalist** agda projects.
 
 ### Run
 
-G8 integrates seemlessly with [sbt](https://www.scala-sbt.org/). Assuming `sbt` is available in the system, one way to generate a new Agda project with name `<name>` from the seed is 
+G8 integrates seemlessly with [sbt](https://www.scala-sbt.org/). Assuming `sbt` is available in the system, one way to generate a new Agda project with name `<name>` in a folder called `<name>` from this seed is 
 
 ```bash 
  sbt new git@github.com:alessandrocandolini/agda.g8.git --name=<name> --force
 ```
 
-(Alternatively, there is also a stand-alone `g8` command-line.) 
+(Alternatively, there is also a stand-alone `g8` command-line which is more scala agnostic.) 
 
-`name` for now is the only supported option. 
+`name` for now is the only supported template variable at the moment and it's used for both the `*.agda` main file as well as the folder name. 
 
 ### Features
 
-* single agda file that can be compiled with GHC backend 
+* agda file that can be compiled with GHC backend 
 * nix-shell which includes also the standard library
+* standard files (`README.md` with instructions, `.gitignore`)
 
 ### Todo 
 
