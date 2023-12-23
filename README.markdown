@@ -13,6 +13,7 @@ A [Giter8][g8] seed for **minimalist** agda projects.
 * add github actions to check the seed itself
 * import agdarsec in nix-shell and github actions
 * add support for literate agda in latex conditionally
+* add support for equational reasoning 
 * better readme
 * many other things
 
