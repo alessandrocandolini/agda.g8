@@ -20,8 +20,17 @@ nix-shell
 ```
 (The same can be automated using `direnv`.)
 
+It's also possible to compile directly through nix
+```bash 
+nix-shell --pure --run "agda --compile $filename$.agda"
+```
+
+The latter is exactly the command executed on the CI (see CI/CD section).
+
 See the [Agda official guide](https://agda.readthedocs.io/en/latest/getting-started/installation.html) for other installation options.
 
 ## CI/CD
 
 This project uses github actions to ensure at every commit the agda files are compiled.
+
+While Github Actions to work with Agda are available --- see [setup-agda](https://github.com/wenkokke/setup-agda) for example ---  in order to make local and remote compilation more consistent and aligned, nix has been used for the CI
